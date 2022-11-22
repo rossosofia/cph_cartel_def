@@ -1,0 +1,351 @@
+/* --- FONTS --- */
+
+@font-face {
+  font-family: Brice;
+  src: url(font/Brice-SemiBold.otf);
+}
+
+@font-face {
+  font-family: Satoshi-Light;
+  src: url(font/Satoshi-Light.otf);
+}
+
+@font-face {
+  font-family: Satoshi-Regular;
+  src: url(font/Satoshi-Regular.otf);
+}
+
+@font-face {
+  font-family: Satoshi-Medium;
+  src: url(font/Satoshi-Medium.otf);
+}
+
+@font-face {
+  font-family: Satoshi-Bold;
+  src: url(font/Satoshi-Bold.otf);
+}
+
+h1 {
+  font-family: Brice;
+  font-size: 5vw;
+  color: white;
+  line-height: 6vw;
+}
+
+h2 {
+  font-family: Brice;
+  font-size: 2rem;
+  color: var(--coral-orange);
+  margin-top: 0;
+}
+
+h3 {
+  font-family: satoshi;
+  font-weight: 100;
+  margin-bottom: 1vw;
+  margin: 0;
+  padding: 0;
+}
+
+h4 {
+  font-family: Brice;
+  font-size: 2vw;
+  margin: 0 0 30px 0;
+}
+
+h5 {
+  font-family: Brice;
+  font-size: large;
+  color: var(--deep-blue);
+  margin-top: 0;
+}
+
+p {
+  font-family: Satoshi;
+  font-size: 16px;
+}
+
+.tags p {
+  font-family: Brice;
+  font-size: large;
+  color: var(--coral-orange);
+}
+
+.contact p {
+  font-size: large;
+  color: var(--coral-orange);
+}
+
+figcaption {
+  font-size: 1rem;
+  font-family: satoshi;
+}
+
+/* --- VAR --- */
+
+:root {
+  --deep-blue: #0b25b7;
+  --pale-coral: #ead0ca;
+  --sun-yellow: #ffce00;
+  --coral-orange: #fc6d3a;
+  --pale-blue: #d7e4f2;
+  --black: #1f1f20;
+}
+
+/* ------------------------ GENERAL ------------------------ */
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+/* ------------------------ desktop ------------------------ */
+
+@media only screen and (min-width: 938px) {
+  /* --- general --- */
+  section {
+    padding: 5rem 0px 5rem 0px;
+  }
+
+  /* --- HEADER --- */
+
+  #cphcartel-logo {
+    max-height: 5rem;
+  }
+
+  /* --- VIDEO BANNER --- */
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 35rem;
+    overflow: hidden;
+  }
+
+  #banner-video {
+    filter: brightness(70%);
+  }
+
+  .banner-text {
+    position: absolute;
+  }
+
+  .banner-text p {
+    color: white;
+    font-size: 2vw;
+  }
+
+  /* ---- CAMPAIGN SECTION ---- */
+  .campaign {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    padding: 5rem 10rem 5rem 10rem;
+  }
+
+  #campaign-video {
+    max-height: 50vw;
+  }
+
+  .campaign p,
+  h2 {
+    text-align: left;
+  }
+
+  .campaign-text {
+    max-width: 40%;
+  }
+
+  #videoplaceholder {
+    max-width: 300px;
+  }
+
+  /* --- MATERIAL SECTION / TEMPLATE ---- */
+  .material_1,
+  .material_2 {
+    display: flex;
+    flex-direction: column;
+    padding: 5rem 10rem 5rem 10rem;
+  }
+
+  .material_1 {
+    background-color: var(--sun-yellow);
+  }
+
+  .material_2 {
+    background-color: var(--coral-orange);
+  }
+
+  .material_img,
+  .material_img2 {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  figure {
+    margin: 0;
+  }
+
+  .material_1 p,
+  .material_2 p {
+    font-family: satoshi;
+    font-weight: 500;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .material_1 h3,
+  .material_1 h4,
+  .material_1 p {
+    color: var(--deep-blue);
+  }
+
+  .material_2 h3,
+  .material_2 h4,
+  .material_2 p {
+    color: var(--sun-yellow);
+  }
+
+  /* IN PROGRESS */
+
+  .tags {
+    padding: 10px;
+  }
+
+  .contact {
+    padding: 10px;
+  }
+
+  footer {
+    background-color: var(--deep-blue);
+    padding: 2vw 0 2vw 0;
+  }
+
+  footer p {
+    color: white;
+  }
+
+  .our_initiatives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 0 2rem 0 2rem;
+  }
+}
+
+/* ------------------------ MOBILE ------------------------  */
+
+@media only screen and (max-width: 937px) {
+  section {
+    padding: 30px;
+  }
+  /* --- HEADER --- */
+
+  #cphcartel-logo {
+    max-height: 5rem;
+  }
+
+  /* --- VIDEO BANNER --- */
+
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 5rem;
+    overflow: hidden;
+    padding: 60px 0px 60px 0px;
+  }
+
+  #banner-video {
+    filter: brightness(70%);
+    max-width: 100%;
+  }
+
+  .banner-text {
+    position: absolute;
+  }
+
+  .banner-text p {
+    color: white;
+    font-size: calc(0.5em + 1vmin);
+  }
+
+  /* ---- CAMPAIGN SECTION ---- */
+  .campaign {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .campaign p,
+  h2 {
+    text-align: center;
+  }
+  /* #campaign-video {
+    max-height: 50vw;
+  } */
+
+  #videoplaceholder {
+    max-width: 100%;
+    padding-top: 30px;
+  }
+
+  /* --- MATERIAL SECTION / TEMPLATE ---- */
+  .material_1,
+  .material_2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .material_1 {
+    background-color: var(--sun-yellow);
+  }
+
+  .material_2 {
+    background-color: var(--coral-orange);
+  }
+
+  .material_img,
+  .material_img2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .material_1 p,
+  .material_2 p {
+    font-family: satoshi;
+    font-weight: 500;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  .material_1 h3,
+  .material_1 h4,
+  .material_1 p {
+    color: var(--deep-blue);
+  }
+
+  .material_2 h3,
+  .material_2 h4,
+  .material_2 p {
+    color: var(--sun-yellow);
+  }
+
+  .our_initiatives {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  }
+}
